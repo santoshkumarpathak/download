@@ -1,0 +1,6 @@
+<p>toggele works!</p>
+<div *ngIf="type == 'admin' || getAccess('user_managment','client','write')">
+    <mat-slide-toggle [checked]="element.status == 'active' ?  true : false" (change)="toggleSwitch($event,element.id)">
+
+    </mat-slide-toggle>
+</div>
